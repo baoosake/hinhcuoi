@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngày Chung Đôi - Kỷ Niệm Của Chúng Mình</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Lato', sans-serif; overflow-x: hidden; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .hero-bg { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2070'); background-size: cover; background-position: center; background-attachment: fixed; }
+        .zoom-img { transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); cursor: zoom-in; }
+        .zoom-img:hover { transform: scale(1.03); }
+        .heart, .sparkle { position: fixed; top: -10px; color: #e11d48; font-size: 15px; animation: fall linear infinite; z-index: 9999; pointer-events: none; }
+        .sparkle { color: #fbbf24; font-size: 8px; }
+        @keyframes fall { to { transform: translateY(100vh); } }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <audio id="bgMusic" loop>
+        <source src="1.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="toggleMusic()" class="fixed bottom-4 left-4 z-[100] bg-stone-900/80 backdrop-blur text-white px-4 py-2 rounded-full shadow-lg text-xs uppercase font-bold hover:bg-amber-900 transition">🎵 Nhạc</button>
+
+    <section class="hero-bg h-screen flex flex-col items-center justify-center text-white text-center px-4">
+        <h1 class="text-6xl md:text-8xl font-bold mb-4" data-aos="fade-up">Ngày Chung Đôi</h1>
+        <p class="text-xl md:text-2xl tracking-widest italic uppercase" data-aos="fade-up" data-aos-delay="200">Ánh Ly & Bảo Ân</p>
+        <a href="#about" class="mt-12 animate-bounce"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg></a>
+    </section>
+
+    <nav class="sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b border-stone-200 py-5">
+        <div class="container mx-auto flex flex-wrap justify-center gap-6 text-xs uppercase tracking-widest font-bold px-4 text-stone-600">
+            <a href="#about" class="hover:text-amber-900">Thông Điệp</a>
+            <a href="#don-dau" class="hover:text-amber-900">Đón Dâu</a>
+            <a href="#gia-tien-gai" class="hover:text-amber-900">Gia Tiên Nhà Gái</a>
+            <a href="#gia-tien-trai" class="hover:text-amber-900">Gia Tiên Nhà Trai</a>
+            <a href="#tiec-gai" class="hover:text-amber-900">Tiệc Cưới Nhà Gái</a>
+            <a href="#tiec-trai" class="hover:text-amber-900">Tiệc Cưới Nhà Trai</a>
+        </div>
+    </nav>
+
+    <section id="about" class="py-24 bg-white" data-aos="fade-up">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl text-amber-900 mb-8 font-bold italic">Câu chuyện của chúng mình</h2>
+            <p class="text-lg text-stone-600 leading-relaxed max-w-3xl mx-auto italic">
+                Ngày cưới không chỉ là một dấu mốc quan trọng, mà còn là nơi lưu giữ những khoảnh khắc đẹp nhất của tình yêu và hạnh phúc. Mỗi bức ảnh trong album này là một mảnh ghép của ký ức, ghi lại những nụ cười, những cái nắm tay và những phút giây đáng nhớ bên gia đình, bạn bè. Dù thời gian có trôi qua bao lâu, chúng mình hy vọng rằng khi nhìn lại những hình ảnh này, cảm xúc của ngày hôm ấy vẫn sẽ vẹn nguyên như thuở ban đầu. ❤️
+            </p>
+        </div>
+    </section>
+
+    <main class="container mx-auto py-16 px-4">
+        <section id="don-dau" class="mb-24" data-aos="fade-up">
+            <h2 class="text-3xl text-amber-900 mb-8 text-center">Lễ Đón Dâu</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <a href="dd1.jpg" class="glightbox"><img src="dd1.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="dd2.jpg" class="glightbox"><img src="dd2.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="dd3.jpg" class="glightbox"><img src="dd3.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="dd4.jpg" class="glightbox"><img src="dd4.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+            </div>
+            <div class="text-center"><a href="https://drive.google.com/drive/folders/1_i8P-7UgnQYYuM04HlGc_yTjNB8yZb5S?usp=drive_link" target="_blank" class="bg-amber-900 text-white px-8 py-3 rounded-full hover:bg-stone-800 transition font-bold uppercase tracking-widest text-sm">Xem thêm ảnh Đón Dâu</a></div>
+        </section>
+
+        <section id="gia-tien-gai" class="mb-24" data-aos="fade-up">
+            <h2 class="text-3xl text-amber-900 mb-8 text-center">Gia Tiên Nhà Gái</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <a href="gt1.jpg" class="glightbox"><img src="gt1.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="gt2.jpg" class="glightbox"><img src="gt2.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="gt3.jpg" class="glightbox"><img src="gt3.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="gt4.jpg" class="glightbox"><img src="gt4.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+            </div>
+            <div class="text-center"><a href="https://drive.google.com/drive/folders/1M2eYKGnTvDOgOv2g42shQet94sjMkHMC?usp=drive_link" target="_blank" class="bg-amber-900 text-white px-8 py-3 rounded-full hover:bg-stone-800 transition font-bold uppercase tracking-widest text-sm">Xem thêm ảnh Gia Tiên Nhà Gái</a></div>
+        </section>
+
+        <section id="gia-tien-trai" class="mb-24" data-aos="fade-up">
+            <h2 class="text-3xl text-amber-900 mb-8 text-center">Gia Tiên Nhà Trai</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <a href="gtt1.jpg" class="glightbox"><img src="gtt1.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="gtt2.jpg" class="glightbox"><img src="gtt2.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="gtt3.jpg" class="glightbox"><img src="gtt3.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="gtt4.jpg" class="glightbox"><img src="gtt4.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+            </div>
+            <div class="text-center"><a href="https://drive.google.com/drive/folders/1eGf4Rvfs_bfHkGLGeifi00Nfly1ECHKm?usp=drive_link" target="_blank" class="bg-amber-900 text-white px-8 py-3 rounded-full hover:bg-stone-800 transition font-bold uppercase tracking-widest text-sm">Xem thêm ảnh Gia Tiên Nhà Trai</a></div>
+        </section>
+
+        <section id="tiec-gai" class="mb-24" data-aos="fade-up">
+            <h2 class="text-3xl text-amber-900 mb-8 text-center">Tiệc Cưới Nhà Gái</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <a href="tcg1.jpg" class="glightbox"><img src="tcg1.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="tcg2.jpg" class="glightbox"><img src="tcg2.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="tcg3.jpg" class="glightbox"><img src="tcg3.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="tcg4.jpg" class="glightbox"><img src="tcg4.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+            </div>
+            <div class="text-center"><a href="https://drive.google.com/drive/folders/1QzD0pVuaj2KVS8Jvysgz5iINS3KysY8B?usp=sharing" target="_blank" class="bg-amber-900 text-white px-8 py-3 rounded-full hover:bg-stone-800 transition font-bold uppercase tracking-widest text-sm">Xem thêm ảnh Tiệc Cưới Nhà Gái</a></div>
+        </section>
+
+        <section id="tiec-trai" class="mb-24" data-aos="fade-up">
+            <h2 class="text-3xl text-amber-900 mb-8 text-center">Tiệc Cưới Nhà Trai</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <a href="tct1.jpg" class="glightbox"><img src="tct1.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="tct2.jpg" class="glightbox"><img src="tct2.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="tct3.jpg" class="glightbox"><img src="tct3.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+                <a href="tct4.jpg" class="glightbox"><img src="tct4.jpg" class="zoom-img rounded-xl shadow-lg"></a>
+            </div>
+            <div class="text-center"><a href="LINK_CUA_BAN_O_DAY" target="_blank" class="bg-amber-900 text-white px-8 py-3 rounded-full hover:bg-stone-800 transition font-bold uppercase tracking-widest text-sm">Xem thêm ảnh Tiệc Cưới Nhà Trai</a></div>
+        </section>
+    </main>
+
+    <footer class="py-8 bg-stone-900 text-stone-400 text-center text-sm"><p>&copy; 2026 - Kỷ niệm ngày cưới</p></footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        window.addEventListener('load', () => { GLightbox({ selector: '.glightbox' }); });
+        
+        function toggleMusic() { 
+            var audio = document.getElementById("bgMusic"); 
+            audio.paused ? audio.play() : audio.pause(); 
+        }
+
+        // Tự động phát khi có tương tác đầu tiên
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById("bgMusic");
+            if (audio.paused) {
+                audio.play();
+            }
+        }, { once: true });
+        
+        function createParticles(type, char) {
+            const el = document.createElement("div");
+            el.innerHTML = char;
+            el.className = type;
+            el.style.left = Math.random() * 100 + "vw";
+            el.style.animationDuration = Math.random() * 3 + 2 + "s";
+            document.body.appendChild(el);
+            setTimeout(() => { el.remove(); }, 5000);
+        }
+        setInterval(() => createParticles("heart", "❤"), 1000);
+        setInterval(() => createParticles("sparkle", "✦"), 500);
+    </script>
+</body>
+</html>
